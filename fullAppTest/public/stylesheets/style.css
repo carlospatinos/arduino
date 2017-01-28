@@ -1,0 +1,13 @@
+body {
+  padding: 10px;
+  padding-left: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+
+
+.divSquare{
+    width:48%; height:200px; margin:4px; border:0px solid black; float: left
+}
