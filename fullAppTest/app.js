@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,7 +11,7 @@ var index = require('./routes/index');
 var api = require('./routes/api');
 
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://arduino:arduino@ds139725.mlab.com:39725/arduino');
+mongoose.connect(process.env.MONGO_URL);
 
 var app = express();
 
